@@ -15,10 +15,10 @@ int main(){
     int n, soma;
 
     printf("Digite um numero: ");
-    scanf("%d", &n);
+    scanf("%d", &n); 
 
     soma = somadealgarismos(n);
-
-    printf("A soma dos algarismos eh: %d\n", soma);
-    return 0;
+    if(soma>=0){
+        printf("A soma dos algarismos eh: %d\n", soma);
+    } 
 }
