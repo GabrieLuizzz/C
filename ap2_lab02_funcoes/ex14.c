@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int calculargasolina(int distancia, int consumo){
+float calculargasolina(float distancia, float consumo){
     if(consumo < 8){
         printf("Venda o carro!\n");
     } else if(consumo >= 8 && consumo <= 14){
@@ -14,16 +14,16 @@ int calculargasolina(int distancia, int consumo){
 }
 
 int main(){
-    int distancia, consumo, result;
+    float distancia, consumo, result;
 
     printf("Distancia percorrida: ");
-    scanf("%d", &distancia);
+    scanf("%f", &distancia);
     printf("Consumo do carro (km/L): ");
-    scanf("%d", &consumo);
+    scanf("%f", &consumo);
 
     result = calculargasolina(distancia, consumo);
    
-    printf("Quantidade de litros usados: %d\n", result);
+    printf("Quantidade de litros usados: %.2f\n", result);
 
     return 0;
 }
