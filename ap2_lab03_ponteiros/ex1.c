@@ -13,7 +13,7 @@ int main(){
     ponteiroy = &y;
     ponteiroz = &z;
 
-    printf("_ANTES DA MODIFICACAO_");
+    printf("_ANTES DA MODIFICACAO_\n");
     printf("Valor de x: %d\n", *ponteirox);
     printf("Valor de y: %.2f\n", *ponteiroy);
     printf("Valor de z: %c\n", *ponteiroz);
@@ -22,7 +22,7 @@ int main(){
     *ponteiroy = 10.5;
     *ponteiroz = 'B';
 
-    printf("_DEPOIS DA MODIFICACAO_");
+    printf("_DEPOIS DA MODIFICACAO_\n");
     printf("Valor de x: %d\n", *ponteirox);
     printf("Valor de y: %.2f\n", *ponteiroy);
     printf("Valor de z: %c\n", *ponteiroz);
