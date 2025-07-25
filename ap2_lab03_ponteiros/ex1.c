@@ -2,13 +2,10 @@
 #include <stdlib.h>
 
 int main(){
-    int x = 10;
-    float y = 5.0;
-    char z = 'A';
-    int  *ponteirox;
-    float *ponteiroy;
-    char *ponteiroz;
-
+    int x = 10, *ponteirox;
+    float y = 5.0, *ponteiroy;
+    char z = 'A', *ponteiroz;
+    
     ponteirox = &x;
     ponteiroy = &y;
     ponteiroz = &z;
